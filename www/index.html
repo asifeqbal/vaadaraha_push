@@ -54,7 +54,7 @@
 	<div id="offline-screen"></div>
 	<div class="social-button-facebook button_inline" onclick="browse();"></div>
 	
-	<iframe src="http://app.vaadaraha.com" name="container-frame" id="container-frame" onload="loaded();" seamless="seamless" width="100%" height="100%" style="border:none; position:absolute;"></iframe>
+	<iframe src="https://www.vaadaraha.com" name="container-frame" id="container-frame" onload="loaded();" seamless="seamless" width="100%" height="100%" style="border:none; position:absolute;"></iframe>
     <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
     <script type="text/javascript" charset="utf-8" src="js/index.js"></script>
     <script type="text/javascript" charset="utf-8" >
@@ -78,7 +78,29 @@
 		window.addEventListener("message", receiveMessage, false);
 		
 		function onDeviceReady() {
-		alert('baal');
+		alert('vaadaraha');
+		
+				var push = PushNotification.init({ "android": {"senderID": "154258606648"},
+					"ios": {"alert": "true", "badge": "true", "sound": "true"}, "windows": {} } );
+					push.on('registration', function(data) {
+						deviceId = data.registrationId;
+						alert('id:' +  deviceId );	
+										
+					}); 
+					
+					push.on('error', function(e) {
+						notificationFlag = false;
+						
+					}); 
+					push.on('notification', function(data) {
+						navigator.notification.alert(
+							data.message,         // message
+							null,                 // callback
+							data.title,           // title
+							'Ok'                  // buttonName
+						);			
+					});
+		
 					// Blanker on change
 					document.addEventListener("online", doWhenOnline, false);
 					document.addEventListener("offline", doWhenOffline, false);
