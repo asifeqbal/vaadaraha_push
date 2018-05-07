@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "154258606648",
+    "firebase_url": "https://vaadarahaapp.firebaseio.com",
+    "project_id": "vaadarahaapp",
+    "storage_bucket": "vaadarahaapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:154258606648:android:e7f18f9e36ad28f2",
+        "android_client_info": {
+          "package_name": "com.vaadaraha.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "154258606648-vqc5634bik4v28be3nh8ggkrabhbqsc2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBaBJi9bc3-1VtE2YQ4nOu1wurUX3p1MlY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
