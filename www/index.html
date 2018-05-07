@@ -78,7 +78,9 @@
 		window.addEventListener("message", receiveMessage, false);
 		
 		function onDeviceReady() {
-		navigator.splashscreen.show();
+				setTimeout(function() {
+				navigator.splashscreen.hide();
+				}, 2000);
 		alert('vaadaraha');
 		
 				var push = PushNotification.init({ "android": {"senderID": "154258606648"},
