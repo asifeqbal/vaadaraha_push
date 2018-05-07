@@ -14,7 +14,7 @@
     <preference name="StatusBarBackgroundColor" value="#ee6e73" />
     <preference name="StatusBarStyle" value="blacktranslucent" />
 	<preference name="SplashScreenDelay" value="5000" />
-	<preference name="ShowSplashScreen" value="true" />
+	
 	<preference name="SplashScreen" value="splash"/>
 	<preference name="orientation" value="portrait" />
 	
